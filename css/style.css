@@ -50,6 +50,8 @@
 
 /* STYLES */
 
+/* HEADER */
+
 header {
     display: flex;
     flex-wrap: wrap;
@@ -117,6 +119,10 @@ nav ul a {
     max-width: 35%;
 }
 
+/* END OF HEADER */
+
+/* HERO BANNER */
+
 h1 {
     color: #FFF;
     font-family: 'Playfair Display', serif;
@@ -127,7 +133,7 @@ h1 {
     top: 45%;
 }
 
-h4 {
+h3 {
     color: #FFF;
     font-family: 'Raleway-Medium', sans-serif;
     text-transform: uppercase;
@@ -139,18 +145,25 @@ h4 {
 }
 
 .herobanner {
-    height: 600px;
+    width: 100%;
+    min-height: 600px;
     background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../images/banner-girl.png), url("../images/flower-bkgd.jpg");
-    background-position: 100% 100%, 50% 150% , 0% 0%;
-    background-size: cover, 45%, cover;
+    background-position: 100% 100%, center bottom , 0% 0%;
+    background-size: cover, 40%, cover;
     background-repeat: no-repeat no-repeat, no-repeat;
 }
+
+/* END OF HERO BANNER */
+
+/* MAIN SECTION 
 
 .main {
     display: flex;
     background-color: #FFF;
     width: 100%;
 }
+*/
+/* ABOUT SECTION */
 
 .about {
     display: flex;
@@ -158,35 +171,40 @@ h4 {
     justify-content: center;
     text-align: center;
     line-height: 2;
-    height: 200px;
-    margin-top: 5%;
-    margin-bottom: 5%;
+    width: 100%;
+    min-height: 200px;
+    margin-bottom: 10%;
+    margin-top: 10%;
 }
 
 .about p {
-    padding-left: 15%;
-    padding-right: 15%;
+    padding-left: 5%;
+    padding-right: 5%;
 }
 
 h2 {
-    font-family: 'Playfair Display', serif;
-    font-size: 3em;
     color: #000;
     text-align: center;
+    font-size: 2em;
 }
 
-.signup {
+strong {
     font-family: 'Playfair Display', serif;
-    font-size: 3em;
-    color: #FFF;
-    text-align: center;
 }
+
+em {
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+}
+
+/* END OF ABOUT SECTION */
+
+/* PRODUCT CATEGORIES SECTION */
 
 .product-categories {
     display: flex;
     width: 100%;
-    height: 700px;
-  
+    min-height: 900px;
 }
 
 .product-categories ul {
@@ -197,59 +215,67 @@ h2 {
     font-size: 2em;
     color: #FFF;
     width: 100%;
-  
 }
 
 .product-categories ul :nth-child(1){
     display:flex;
     flex: 2 100%;
     margin-bottom: 2%;
-    background-image: url(../images/mens-category.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../images/mens-category.jpg);
     background-size: 100%;
     background-repeat: no-repeat;
+    background-position: center bottom;
     justify-content: center;
     align-items: center;
 }
 
 .product-categories ul :nth-child(2){
     display:flex;
-    flex: 1 50%;
+    flex: 1 49%;
     margin-bottom: 2%;
-    background-image: url(../images/trends-category.jpg);
+    margin-right: 1%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../images/trends-category.jpg);
     background-size: 100%;
     background-repeat: no-repeat;
+    background-position: center center;
     justify-content: center;
     align-items: center;
 }
 
 .product-categories ul :nth-child(3){
     display:flex;
-    flex: 1 50%;
+    flex: 1 49%;
     margin-bottom: 2%;
-    background-image: url(../images/glasses-category.jpg);
+    margin-left: 1%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../images/glasses-category.jpg);
     background-size: 100%;
     background-repeat: no-repeat;
+    background-position: center center;
     justify-content: center;
     align-items: center;
 }
 
 .product-categories ul :nth-child(4){
     display:flex;
-    flex: 1 50%;
+    flex: 1 49%;
     margin-bottom: 2%;
-    background-image: url(../images/sale-category.jpg);
+    margin-right: 1%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../images/sale-category.jpg);
     background-size: 100%;
     background-repeat: no-repeat;
+    background-position: center center;
     justify-content: center;
     align-items: center;
 }
 
 .product-categories ul :nth-child(5){
     display:flex;
-    flex: 1 50%;
+    flex: 1 49%;
     margin-bottom: 2%;
-    background-image: url(../images/bags-category.jpg);
+    margin-left: 1%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../images/bags-category.jpg);
     background-size: 100%;
+    background-position: center center;
     background-repeat: no-repeat;
     justify-content: center;
     align-items: center;
@@ -258,45 +284,75 @@ h2 {
 .product-categories ul :nth-child(6){
     display:flex;
     flex: 2 100%;
-    background-image: url(../images/womens-category.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../images/womens-category.jpg);
     background-size: 100%;
     background-repeat: no-repeat;
+    background-position: center top;
     justify-content: center;
     align-items: center;
 }
+
+/* END OF PRODUCT CATEGORIES SECTION */
+
+/* SLIDESHOW SECTION */
+
+.slideshow {
+    display: flex;
+    justify-content: center;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    width: 100%;
+    min-height: 700px;
+}
+
+/* END OF SLIDESHOW SECTION */
+
+/* EMAIL SIGN-UP SECTION */
 
 .email-signup {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../images/wave-bkgd.jpg);
-    background-size: contain;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center bottom;
     line-height: 2;
-    height: 200px;
+    width: 100%;
+    min-height: 225px;
     color: #FFF;
-    padding: 10%;
-    margin-bottom: 3%;
+    padding: 5%;
+    margin-bottom: 2%;
     text-align: center;
     font-size: 1em;
 }
 
+.signup {
+    font-family: 'Playfair Display', serif;
+    color: #FFF;
+}
+
 form {
-    display: flex;
-    justify-content: center;
+    display: inline-block;
+    position: relative;
     width: 100%;
+    margin-top: 5%;
 }
 
 input[type=submit] {
-    display: flex;
-    flex: 1;
-    justify-content: center;
-    align-items: center;
+    display: inline;
+    position: absolute;
+    right: -1%;
+    bottom: 10%;
+    min-width: 30%;
     background-color: #e2574c;
     color:  #FFFF;
     border-radius: 20px;
     border: none;
+    min-height: 80%;
     font-size: 1em;
     font-family: 'Raleway-Medium', sans-serif;
+    z-index: 1;
 }
 
 input[type=submit]:hover {
@@ -304,24 +360,31 @@ input[type=submit]:hover {
   }
 
 input[type=email] {
-    display: flex;
-    flex: 2;
+    display: inline-block;
+    min-height: 100%;
+    width: 100%;
+    padding-left: 2%;
     border-radius: 20px;
     color: #969696;
     border: none;
-    width: 100%;
-    padding-left: 10%;
     font-size: 1em;
     font-family: 'Raleway-Light', sans-serif;
+    z-index: -1;
 }
+
+/* END OF EMAIL SIGN-UP SECTION */
+
+/* END OF MAIN */
+
+/* FOOTER */
 
 footer {
     display: flex;
     flex-wrap: wrap;
     background-color: #242424;
-    min-height: 250px;
-    padding: 10%;
+    min-height: 225px;
     width: 100%;
+    padding: 5%;
 }
 
 .contact {
@@ -333,6 +396,7 @@ footer {
     text-align: center;
     font-family: 'Playfair Display', serif;
     line-height: 1.5;
+    margin-bottom: 2%;
 }
 
 .address {
@@ -340,19 +404,12 @@ footer {
 }
 
 .contact a {
-    display: flex;
-    justify-content: center;
+    display: inline;
     color: #FFF;
 }
 
 a:hover {
     color: #b64036;
-}
-
-
-em {
-    font-family: 'Playfair Display', serif;
-    font-style: italic;
 }
 
 .socialicons {
@@ -372,6 +429,8 @@ em {
 .icontext {
     display: none;
 }
+
+/* END OF FOOTER */
 
 .container {
     display: flex;
