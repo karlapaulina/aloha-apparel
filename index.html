@@ -11,6 +11,7 @@
         <!--STYLESHEETS-->
         <link rel="stylesheet" type="text/css" href="css/reset.css">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+        <link rel="stylesheet" href="css/flickity.min.css" media="screen">
         <link rel="stylesheet" type="text/css" href="css/style.css">
     </head>
     <body class="container">
@@ -23,15 +24,18 @@
 
             <nav>
             <ul>
-                <li><a href="">about</a></li>
-                <li><a href="">shop</a></li>
-                <li><a href="">featured</a></li>
-                <li><a href="">updates</a></li>
+                <li><a href="#about">about</a></li>
+                <li><a href="#product-categories">shop</a></li>
+                <li><a href="#slideshow">featured</a></li>
+                <li><a href="#email-signup">updates</a></li>
             </ul>
         </nav>
 
         <section class="cart">
-            <img src="images/cart-icon.svg">
+            <article id="cart-container">
+                        <img src="images/cart-icon.svg" aria-hidden="true">
+                    <span id="itemCount"></span>
+                </article>
         </section>
 
          </header>
@@ -41,14 +45,14 @@
            <h1>Spring/Summer 2019</h1>
        </section>
 
-       <!--<main>-->
+    
 
-        <section class="about">
+        <section id="about">
                 <h2><em>Hand-Crafted</em><strong> Styles</strong></h2>
                 <p>Aloha Apparel Co. sells only the finest ready-to-travel clothing. Browse our current selection of products or sign-up for updates below.</p>
         </section>
 
-        <section class="product-categories">
+        <section id="product-categories">
             <ul>
                 <li>men's</li>
                 <li>trends</li>
@@ -59,12 +63,72 @@
             </ul>
         </section>
 
-        <section class="slideshow">
+        <section id="slideshow">
             <h2><em>Most-Loved</em><strong> Products</strong></h2>
+            <section class="carousel" data-flickity>
+            <article class="carousel-cell">
+                    <img src="images/stretch-knit-dress.jpg">
+                    <p class="carousel-cell-desc">dresses</p>
+                    <h2 class="carousel-cell-title">Strech Knit Dress</h2>
+                    <p class="carousel-cell-price">$169.00</p>
+                    <button class="add">Add to cart</button>
+            </article>
+            <article class="carousel-cell">
+                <img src="images/cotton-blue-shirt.jpg">
+                <p class="carousel-cell-desc">shirts</p>
+                <h2 class="carousel-cell-title">Cotton Blue Shirt</h2>
+                <p class="carousel-cell-price">$89.00</p>
+                <button class="add">Add to cart</button>
+            </article>
+            <article class="carousel-cell">
+                <img src="images/checked-stretch-dress.jpg">
+                <p class="carousel-cell-desc">dresses</p>
+                <h2 class="carousel-cell-title">Checked Stretch Dress</h2>
+                <p class="carousel-cell-price">$129.00</p>
+                <button class="add">Add to cart</button>
+            </article>
+            <article class="carousel-cell">
+                <img src="images/blue-hipster-backpack.jpg">
+                <p class="carousel-cell-desc">bags</p>
+                <h2 class="carousel-cell-title">Blue Hipster Backpack</h2>
+                <p class="carousel-cell-price">$69.00</p>
+                <button class="add">Add to cart</button>
+            </article>
+            <article class="carousel-cell">
+                <img src="images/blue-silk-dress.jpg">
+                <p class="carousel-cell-desc">dresses</p>
+                <h2 class="carousel-cell-title">Blue Silk Dress</h2>
+                <p class="carousel-cell-price">$169.00</p>
+                <button class="add">Add to cart</button>
+            </article>
+            <article class="carousel-cell">
+                <img src="images/demin-overall-shorts.jpg">
+                <p class="carousel-cell-desc">shorts</p>
+                <h2 class="carousel-cell-title">Denim Overall Shorts</h2>
+                <p class="carousel-cell-price">$50.00</p>
+                <button class="add">Add to cart</button>
+            </article>
+            <article class="carousel-cell">
+                <img src="images/pink-dotted-dress.jpg">
+                <p class="carousel-cell-desc">dresses</p>
+                <h2 class="carousel-cell-title">Pink Dotted Dress</h2>
+                <p class="carousel-cell-price">$189.00</p>
+                <button class="add">Add to cart</button>
+            </article>
+            <article class="carousel-cell">
+                <img src="images/cotton-yellow-tshirt.jpg">
+                <p class="carousel-cell-desc">shirts</p>
+                <h2 class="carousel-cell-title">Cotton Yellow T-Shirt
+                </h2>
+                <p class="carousel-cell-price">$59.00</p>
+                <button class="add">Add to cart</button>
+            </article>
+            </section>
+
         </section>
 
-        <section class="email-signup">
-                <h2 class="signup"><em>Sign-up for</em> <strong>Updates</strong> </h2>
+        <section id="email-signup">
+                <h2 class="signup"><em>Sign-up for</em><strong> Updates</strong> </h2>
                 <p>Stay updated on our latest product releases, be first to find out about upcoming sales, and get free style tips form out blog. Unsubscribe at any time.</p>
                 <form>
                     <input type="email" name="email" value="Your Email">
@@ -72,8 +136,7 @@
                 </form>
         </section>
 
-       <!--</main>-->
-
+    
        <footer>
            <section class="contact">
                <p>&copy; 2019 Aloha Apparel Co.
@@ -81,7 +144,7 @@
                    Powered by HTML and CSS.
                </p>
                <br>
-              <p>604-604-6040. <a href="mailto:info@alohaapparel.com?subject=Mail from Website">info@alohaapparel.com</a></p>
+              <p><a href="tel:604-604-6040">604-604-6040.</a> <a href="mailto:info@alohaapparel.com?subject=Mail from Website">info@alohaapparel.com</a></p>
                <br>
               <p class="address">1490 W Broadway
                    <br>
@@ -98,5 +161,10 @@
                </ul>
         </section>
        </footer>
+       <script src="js/flickity.pkgd.min.js"></script>
+       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+       <script src="js/scrolling.jquery.min.js"></script>
+       <script src="js/add-to-cart.jquery.min.js"></script>
+       <script src="js/main.js"></script>
     </body>
 </html>
