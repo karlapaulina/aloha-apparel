@@ -935,7 +935,7 @@ input[type=text] {
 
 footer {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     background-color: #242424;
     min-height: 225px;
     width: 100%;
@@ -948,7 +948,7 @@ footer {
     justify-content: center;
     color: #FFF;
     width: 100%;
-    text-align: center;
+    text-align: left;
     font-family: 'Playfair Display', serif;
     line-height: 1.5;
     margin-bottom: 2%;
@@ -969,20 +969,21 @@ a:hover {
 
 .socialicons {
     display: flex; 
-    justify-content: center;
+    justify-content: flex-end;
     color: #FFF;
     width: 100%;
 }
 
 .socialicons ul {
-    display: flex; 
-    justify-content: space-between;
-    align-items: center;
+    display: flex;
+    flex-wrap: wrap; 
+    align-items: space-around;
     width: 30%;
 }
 
 .icontext {
-    display: none;
+    display: inline-block;
+    margin-left: 5px;
 }
 
 /* END OF FOOTER */
