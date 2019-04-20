@@ -10,25 +10,22 @@ document.addEventListener("DOMContentLoaded", function() {
         prevNextButtons: false
     });
 
-   /* var flkty = new Flickity( '.carousel', {
-        // options
-     
-      });*/
+    const button = document.querySelector("email-btn");
+    const input = document.querySelector("email-input")
+    
+    /*button.addEventListener("click"), function(event) {
+       /*event.preventDefault();
+       let msg = input.value
+       console.log(msg);
+
+       function validation(){
+        if (!email-input) {
+            RegExp = /@/;
+            return true,
+            alert('Thank you for subscribing')}
+        else {
+            return false,
+            alert('Please enter a valid email')
+        }
+    }}*/
 });
-
-//const collectionTitle = document.getElementsByTagName('h3');
-//collectionTitle[0] .innerHTML = 'Spring Collection';
-
-//console.log(collectionTitle);
-
-/* 
-const button = document.querySelector("#message-form");
-const input = document.querySelector("message-form input");
-
-button.addEventListener("click", function(event)) {
-    event.preventDefault();
-    let value = event.target
-    console.log(value);
-});
-*/
-
