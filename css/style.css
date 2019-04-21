@@ -198,8 +198,8 @@ h3 {
     width: 100%;
     min-height: 600px;
     background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../images/banner-girl.png), url("../images/flower-bkgd.jpg");
-    background-position: 100% 100%, center bottom , 0% 0%;
-    background-size: cover, 40%, cover;
+    background-position: 100% 100%, center top , 0% 0%;
+    background-size: cover, contain, cover;
     background-repeat: no-repeat no-repeat, no-repeat;
 }
 
@@ -672,8 +672,8 @@ h3 {
     width: 100%;
     min-height: 600px;
     background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../images/banner-girl.png), url("../images/flower-bkgd.jpg");
-    background-position: 100% 100%, center bottom , 0% 0%;
-    background-size: cover, 35%, cover;
+    background-position: 100% 100%, center top , 0% 0%;
+    background-size: cover, contain, cover;
     background-repeat: no-repeat no-repeat, no-repeat;
 }
 
@@ -885,7 +885,10 @@ em {
     width: 100%;
     min-height: 225px;
     color: #FFF;
-    padding: 5%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    padding-left: 10%;
+    padding-right: 10%;
     margin-bottom: 2%;
     text-align: center;
     font-size: 1em;
@@ -899,7 +902,7 @@ em {
 form {
     display: inline-block;
     position: relative;
-    width: 50%;
+    width: 75%;
     margin-top: 5%;
 }
 
