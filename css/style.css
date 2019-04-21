@@ -233,6 +233,7 @@ h2 {
 
 strong {
     font-family: 'Playfair Display', serif;
+    font-weight: bold;
 }
 
 em {
@@ -691,6 +692,8 @@ h3 {
     min-height: 150px;
     margin-bottom: 5%;
     margin-top: 5%;
+    padding-left: 10%;
+    padding-right: 10%;
 }
 
 #about p {
@@ -707,6 +710,7 @@ h2 {
 
 strong {
     font-family: 'Playfair Display', serif;
+    font-weight: bold;
 }
 
 em {
@@ -721,8 +725,7 @@ em {
 #product-categories {
     display: flex;
     width: 100%;
-    max-height: 600px;
-    min-height: 300px;
+    min-height: 500px;
 }
 
 #product-categories ul {
@@ -733,8 +736,6 @@ em {
     font-size: 1.5em;
     color: #FFF;
     width: 100%;
-    max-height: 600px;
-    min-height: 300px;
 }
 
 #product-categories ul :nth-child(1){
@@ -743,9 +744,9 @@ em {
     margin-right: 1%;
     margin-bottom: 1%;
     background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../images/mens-category.jpg);
-    background-size: 100%;
+    background-size: cover;
     background-repeat: no-repeat;
-    background-position: center center;
+    background-position: right bottom;
     justify-content: center;
     align-items: center;
 }
@@ -757,7 +758,7 @@ em {
     margin-right: auto;
     margin-left: 0%;
     background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../images/trends-category.jpg);
-    background-size: 100%;
+    background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
     justify-content: center;
@@ -771,7 +772,7 @@ em {
     margin-left: 1%;
     margin-right: auto;
     background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../images/glasses-category.jpg);
-    background-size: 100%;
+    background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
     justify-content: center;
@@ -784,7 +785,7 @@ em {
     margin-bottom: 0%;
     margin-right: 1%;
     background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../images/sale-category.jpg);
-    background-size: 100%;
+    background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
     justify-content: center;
@@ -793,12 +794,12 @@ em {
 
 #product-categories ul :nth-child(5){
     display:flex;
-    flex: 1 24%;
+    flex: 1 25%;
     margin-bottom: 0%;
     margin-left: auto;
     margin-right: 0%;
     background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../images/bags-category.jpg);
-    background-size: 100%;
+    background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
     justify-content: center;
@@ -810,9 +811,9 @@ em {
     flex: 2 49%;
     margin-left: 1%;
     background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../images/womens-category.jpg);
-    background-size: 100%;
+    background-size: cover;
     background-repeat: no-repeat;
-    background-position: center center;
+    background-position: center top;
     justify-content: center;
     align-items: center;
 }
