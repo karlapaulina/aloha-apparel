@@ -10,22 +10,17 @@ document.addEventListener("DOMContentLoaded", function() {
         prevNextButtons: false
     });
 
-    const button = document.querySelector("email-btn");
-    const input = document.querySelector("email-input")
-    
-    /*button.addEventListener("click"), function(event) {
-       /*event.preventDefault();
-       let msg = input.value
-       console.log(msg);
+    const input = document.querySelector("#email-input")
+    const button = document.querySelector("#email-btn");
 
-       function validation(){
-        if (!email-input) {
-            RegExp = /@/;
-            return true,
-            alert('Thank you for subscribing')}
-        else {
-            return false,
-            alert('Please enter a valid email')
-        }
-    }}*/
+    button.addEventListener("click", function(event) {
+
+        console.log(input.value)
+        if (input.value.includes("@")){
+        alert("Thank you for subscribing!")
+
+        } else {
+        alert("Please enter a valid e-mail")
+
+        }});
 });

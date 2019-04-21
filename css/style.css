@@ -125,10 +125,10 @@ nav ul a {
     width: 50%;
 }
 
-/*.cart img {
+.cart img {
     display: flex;
-    max-width: 35%;
-}*/
+    max-width: 30%;
+}
 
 #cart-container {
     display: flex;
@@ -421,7 +421,7 @@ form {
     margin-top: 5%;
 }
 
-input[type=button] {
+input[type=submit] {
     display: inline;
     position: absolute;
     right: -1%;
@@ -529,7 +529,7 @@ a:hover {
 
 header {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     align-items: center;
     padding: 2%;
     width: 100%;
@@ -560,9 +560,9 @@ header {
 nav {
     display: flex;
     justify-content: center;
-    order: 2;
+    order: 1;
     width: 100%;
-    border-top-style: solid;
+    border-top-style: none;
     border-top-color: #969696;
     border-top-width: 1px;
     padding-top: 2%;
@@ -597,13 +597,13 @@ nav ul a {
     display: flex;
     justify-content: flex-end;
     order: 1;
-    width: 50%;
+    width: 30%;
 }
 
-/*.cart img {
+.cart img {
     display: flex;
-    max-width: 35%;
-}*/
+    max-width: 65%;
+}
 
 #cart-container {
     display: flex;
@@ -620,7 +620,7 @@ nav ul a {
     background: red;
     color: white;
     text-align: center;
-    font-size: 2em;
+    font-size: 1.5em;
   }
   
   i:hover {
