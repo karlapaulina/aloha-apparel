@@ -1178,7 +1178,7 @@ h3 {
 
 .herobanner {
     width: 100%;
-    min-height: 900px;
+    min-height: 750px;
     background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../images/banner-girl.png), url("../images/flower-bkgd.jpg");
     background-position: 100% 100%, center top, 0% 0%;
     background-size: cover, contain, contain;
@@ -1232,7 +1232,7 @@ em {
 #product-categories {
     display: flex;
     width: 100%;
-    min-height: 500px;
+    min-height: 700px;
 }
 
 #product-categories ul {
@@ -1334,8 +1334,8 @@ em {
     flex-wrap: wrap;
     justify-content: center;*/
     width: 100%;
-    margin-top: 5%;
-    margin-bottom: 10%;
+    margin-top: 2%;
+    margin-bottom: 5%;
 }
 
 .carousel {
@@ -1347,7 +1347,7 @@ em {
 }
 
 .carousel-cell {
-    width: 23; 
+    width: 23%; 
     padding: 1rem;
     text-align: center;
   }
@@ -1373,7 +1373,7 @@ em {
 .carousel-cell-price{
     color: #969696;
     font-family: 'Raleway-Medium', sans-serif;
-    margin-bottom: 2%;
+    margin-bottom: 5%;
 }
 
 
@@ -1393,11 +1393,11 @@ em {
     width: 100%;
     min-height: 225px;
     color: #FFF;
-    padding-top: 5%;
-    padding-bottom: 5%;
-    padding-left: 10%;
-    padding-right: 10%;
-    margin-bottom: 2%;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    padding-left: 25%;
+    padding-right: 25%;
+    margin-bottom: 1%;
     text-align: center;
     font-size: 1em;
 }
