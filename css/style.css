@@ -542,15 +542,14 @@ header {
     display: flex;
     justify-items: flex-start;
     order: 1;
-    max-width: 50%;
+    max-width: 25%;
     max-height: 100px;
 }
 
 .logo img {
     display: flex;
-    max-width: 75%;
-    max-height: 75%;
-    padding-left: 5%;
+    max-width: 85%;
+    max-height: 85%;
 }
 
 /*END OF LOGO*/
@@ -566,8 +565,8 @@ nav {
     border-top-color: #969696;
     border-top-width: 1px;
     padding-top: 2%;
-    max-width: 100%;
-    margin-top: 3%;
+    max-width: 75%;
+    margin-top: 0;
 }
 
 nav ul {
@@ -597,18 +596,18 @@ nav ul a {
     display: flex;
     justify-content: flex-end;
     order: 1;
-    width: 30%;
+    width: 25%;
 }
 
 .cart img {
     display: flex;
-    max-width: 65%;
+    max-width: 75%;
 }
 
 #cart-container {
     display: flex;
     justify-content: flex-end;
-    width: 100%;
+    width: 90%;
     height: 100%;
   }
   
@@ -674,7 +673,7 @@ h3 {
     min-height: 600px;
     background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../images/banner-girl.png), url("../images/flower-bkgd.jpg");
     background-position: 100% 100%, center bottom , 0% 0%;
-    background-size: cover, 40%, cover;
+    background-size: cover, 35%, cover;
     background-repeat: no-repeat no-repeat, no-repeat;
 }
 
@@ -689,9 +688,9 @@ h3 {
     text-align: center;
     line-height: 2;
     width: 100%;
-    min-height: 200px;
-    margin-bottom: 10%;
-    margin-top: 10%;
+    min-height: 150px;
+    margin-bottom: 5%;
+    margin-top: 5%;
 }
 
 #about p {
@@ -722,7 +721,8 @@ em {
 #product-categories {
     display: flex;
     width: 100%;
-    min-height: 900px;
+    max-height: 600px;
+    min-height: 300px;
 }
 
 #product-categories ul {
@@ -730,28 +730,32 @@ em {
     flex-flow: row wrap;
     font-family: 'Raleway-Medium', sans-serif;
     text-transform: uppercase;
-    font-size: 2em;
+    font-size: 1.5em;
     color: #FFF;
     width: 100%;
+    max-height: 600px;
+    min-height: 300px;
 }
 
 #product-categories ul :nth-child(1){
     display:flex;
-    flex: 2 100%;
-    margin-bottom: 2%;
+    flex: 2 49%;
+    margin-right: 1%;
+    margin-bottom: 1%;
     background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../images/mens-category.jpg);
     background-size: 100%;
     background-repeat: no-repeat;
-    background-position: center bottom;
+    background-position: center center;
     justify-content: center;
     align-items: center;
 }
 
 #product-categories ul :nth-child(2){
     display:flex;
-    flex: 1 49%;
-    margin-bottom: 2%;
-    margin-right: 1%;
+    flex: 1 24%;
+    margin-bottom: 1%;
+    margin-right: auto;
+    margin-left: 0%;
     background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../images/trends-category.jpg);
     background-size: 100%;
     background-repeat: no-repeat;
@@ -762,9 +766,10 @@ em {
 
 #product-categories ul :nth-child(3){
     display:flex;
-    flex: 1 49%;
-    margin-bottom: 2%;
+    flex: 1 23%;
+    margin-bottom: 1%;
     margin-left: 1%;
+    margin-right: auto;
     background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../images/glasses-category.jpg);
     background-size: 100%;
     background-repeat: no-repeat;
@@ -775,8 +780,8 @@ em {
 
 #product-categories ul :nth-child(4){
     display:flex;
-    flex: 1 49%;
-    margin-bottom: 2%;
+    flex: 1 24%;
+    margin-bottom: 0%;
     margin-right: 1%;
     background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../images/sale-category.jpg);
     background-size: 100%;
@@ -788,9 +793,10 @@ em {
 
 #product-categories ul :nth-child(5){
     display:flex;
-    flex: 1 49%;
-    margin-bottom: 2%;
-    margin-left: 1%;
+    flex: 1 24%;
+    margin-bottom: 0%;
+    margin-left: auto;
+    margin-right: 0%;
     background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../images/bags-category.jpg);
     background-size: 100%;
     background-position: center center;
@@ -801,11 +807,12 @@ em {
 
 #product-categories ul :nth-child(6){
     display:flex;
-    flex: 2 100%;
+    flex: 2 49%;
+    margin-left: 1%;
     background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../images/womens-category.jpg);
     background-size: 100%;
     background-repeat: no-repeat;
-    background-position: center top;
+    background-position: center center;
     justify-content: center;
     align-items: center;
 }
@@ -892,7 +899,7 @@ em {
 form {
     display: inline-block;
     position: relative;
-    width: 100%;
+    width: 50%;
     margin-top: 5%;
 }
 
@@ -947,7 +954,7 @@ footer {
     flex-direction: column;
     justify-content: center;
     color: #FFF;
-    width: 100%;
+    width: 80%;
     text-align: left;
     font-family: 'Playfair Display', serif;
     line-height: 1.5;
@@ -969,21 +976,37 @@ a:hover {
 
 .socialicons {
     display: flex; 
-    justify-content: flex-end;
+    flex-wrap: nowrap;
     color: #FFF;
-    width: 100%;
+    width: 20%;
 }
 
 .socialicons ul {
     display: flex;
-    flex-wrap: wrap; 
-    align-items: space-around;
-    width: 30%;
+    flex-direction: column;
+    align-items: flex-start;
+    flex-wrap: nowrap;
+    width: 100%;
 }
 
 .icontext {
     display: inline-block;
-    margin-left: 5px;
+}
+
+.fa-facebook-f {
+    margin-right: 20px;
+}
+
+.fa-twitter {
+    margin-right: 20px;
+}
+
+.fa-instagram {
+    margin-right: 20px;
+}
+
+.fa-pinterest {
+    margin-right: 20px;
 }
 
 /* END OF FOOTER */
@@ -993,7 +1016,7 @@ a:hover {
     flex-wrap: wrap;
     min-width: 600px;
     font-family: 'Raleway-Light', sans-serif;
-    font-size: 14px;
+    font-size: 16px;
     color: #2d2d2d;
 }
 
