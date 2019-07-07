@@ -9,3 +9,7 @@ ehthumbs.db
 *.Trashes
 # Ignore npm packages
 node_modules/
+
+# Ignore Mockups folder
+
+/mock-ups
