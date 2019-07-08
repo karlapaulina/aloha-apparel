@@ -1,6 +1,7 @@
 # Aloha Apparel | A Single-page responsive e-Commerce website
 
-This is a responsive website for Aloha Apparel Co.
+This is a responsive website for Aloha Apparel Co | 
+[Live Site Preview](https://karlapaulina.github.io/aloha-apparel/)
 
 ![Image](images/aloha-screenshot.png)
 
